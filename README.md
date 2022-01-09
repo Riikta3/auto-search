@@ -1,5 +1,7 @@
 # AUTO-SEARCH
 
+Application créé avec React et Redux.
+
 L'application est en ligne sur le lien suivant
 test-ophelia.surge.sh
 
