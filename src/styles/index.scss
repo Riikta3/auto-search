@@ -1,0 +1,12 @@
+@use './vars';
+@use './reset';
+
+
+.dark {
+    background-color: vars.$dark-color;
+}
+
+a {
+    color: inherit; 
+    text-decoration: inherit; 
+}

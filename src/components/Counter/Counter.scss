@@ -1,0 +1,47 @@
+@use '../../styles/vars';
+
+.counter {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    &-text {
+        margin-right: 20px;
+        font-family: vars.$paragraph-font;
+    }
+    &-btn {
+        width: 70px;
+        height: 35px;
+        margin-left: 10px;
+        font-size: 12px;
+        cursor: pointer;
+        font-family: vars.$paragraph-font;
+        font-weight: 400;
+        color: #fff;
+        text-transform: uppercase;
+        text-align:center;
+        border: none;
+        background-size: 300% 100%;
+        border-radius: 50px;
+        transition: all .4s ease-in-out;
+        background-image: linear-gradient(
+            to right,
+            #25aae1,
+            #4481eb,
+            #04befe,
+            #3f86ed
+        );
+        &:hover {
+            background-position: 100% 0;
+            transition: all .4s ease-in-out;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+select {
+    cursor: pointer;
+
+}

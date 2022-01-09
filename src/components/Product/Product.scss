@@ -1,0 +1,95 @@
+@use '../../styles/vars';
+
+.product {
+    background-color: vars.$dark-color;
+    margin: 20px 200px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px #1b1c1b68, -2px -2px 30px #2d302f67;
+    &-icon{
+        padding: 20px 0 0 20px;
+        color: vars.$paragraph-color;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    &-main{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        &-left {
+            margin: 20px;
+                &-img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &-right {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            &-title {
+                font-family: vars.$title-font;
+                color: vars.$title-color;
+                &>p {
+                    font-weight: 300;
+                }
+                &>h2 {
+                    font-weight: 700;
+                    
+                }
+            }
+            &-subtitle {
+                font-family: vars.$title-font;
+                color: vars.$paragraph-color;
+                font-weight: 700;
+            }
+        }
+    }
+    &-size {
+        display: flex;
+        justify-content: center;
+        &-details {
+            &-title {
+                margin: 20px 0;
+                font-family: vars.$title-font;
+                color: vars.$title-color;
+                font-weight: 700;
+                &_brand {
+                    font-family: vars.$title-font;
+                    color: vars.$subtitle-color;
+                    font-weight: 300;
+                    font-size: 13px;
+                }
+            }
+            &>p {
+                font-family: vars.$paragraph-font;
+                color: vars.$paragraph-color;
+            }
+        }
+    }
+    &-infos {
+        &-title {
+            text-align: center;
+            font-family: vars.$title-font;
+            color: vars.$title-color;
+            font-weight: 700;
+            margin: 50px 0 30px 0;
+        }
+        &-detail {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-gap: 10px 0px;
+            gap: 10px 0px;
+            grid-template-areas:
+                ". ."
+                ". .";
+            text-align: center;
+            margin: auto;
+            width: 50%;
+            font-family: vars.$paragraph-font;
+            color: vars.$paragraph-color;
+        }
+    }
+}

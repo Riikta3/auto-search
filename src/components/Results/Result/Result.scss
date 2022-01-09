@@ -1,0 +1,87 @@
+@use '../../../styles/vars';
+
+.result {
+    position: relative;
+    cursor: pointer;
+    width: 300px;
+    border: 1px solid rgba(173, 216, 230, 0.279);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 25px;
+    padding: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px #1b1c1b13, -2px -2px 30px #2d302f36;
+    transition: 0.3s all ease-in-out;
+    &:hover{
+        transform: translateY(-10px);
+    }
+    &-pictures {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+
+    }
+    &-brand {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: vars.$subtitle-font;
+        color: vars.$subtitle-color;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+    &-motor, &-power, &-energy {
+        font-size: 10px;
+        font-family: vars.$paragraph-font;
+        font-weight: 300;
+        color: vars.$subtitle-color;
+    }
+    &-energy{
+        float: right;
+    }
+    &-desc {
+        font-size: 12px;
+        font-family: vars.$paragraph-font;
+        color: vars.$dark-color;
+        font-weight: 300;
+        height: 150px;
+        margin: 15px 0;
+        line-height: 14px;
+    }
+    &-link{     
+        position: absolute;
+        bottom: 10px;
+        left: 0px;
+        right: 0px;
+        text-align: center;
+        &-btn{
+            width: 140px;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: vars.$paragraph-font;
+            font-weight: 400;
+            color: #fff;
+            text-transform: uppercase;
+            height: 45px;
+            text-align:center;
+            border: none;
+            background-size: 300% 100%;
+            border-radius: 50px;
+            transition: all .4s ease-in-out;
+            background-image: linear-gradient(
+                to right,
+                #25aae1,
+                #4481eb,
+                #04befe,
+                #3f86ed
+            );
+        }
+        &-btn:hover {
+            background-position: 100% 0;
+            transition: all .4s ease-in-out;
+        }
+        &-btn:focus {
+            outline: none;
+        }
+    }
+}
