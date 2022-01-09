@@ -23,10 +23,12 @@ export default function App({ visibility, resetState }) {
       }
       <footer className='app-footer'>
         <h1 onClick={resetState} className='app-footer-title'>TROUVE TON BOLIDE</h1>
-        <p className="app-footer-copyright">
-          Copyright 2021 | App créé par
-          <a href="http://www.tarikklezo.fr/"> Tarik KLEZO</a>
-        </p>
+        <div className="app-footer-copyright">
+          <p>
+            Copyright 2021 | App créé par <span> </span>
+            <a href="http://www.tarikklezo.fr/">Tarik KLEZO</a>
+          </p>
+        </div>
       </footer>
     </div>
   );

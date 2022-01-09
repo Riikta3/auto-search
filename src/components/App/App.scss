@@ -15,7 +15,6 @@
     }
     &-footer {
         padding: 30px;
-        cursor: pointer;
         background-color: vars.$dark-color;
         &-title {
             text-align: center;
@@ -24,6 +23,8 @@
             font-size: 25px;
             font-weight: 600;
             text-align: center;
+            cursor: pointer;
+
         }
         &-copyright {
             margin-top: 10px;
@@ -31,6 +32,15 @@
             font-family: vars.$paragraph-font;
             color: vars.$paragraph-color;
             font-size: 10px;
-        }
+                &>p>a {
+                    cursor: pointer;
+                    margin-top: 10px;
+                    text-align: center;
+                    font-family: vars.$paragraph-font;
+                    color: vars.$paragraph-color;
+                    font-size: 10px;
+                    text-decoration: underline;
+                }
+            }
     }
 }
